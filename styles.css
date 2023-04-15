@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility classes */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-links {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-links:hover {
+    color: var(--accent-color);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+/* Top banner */
+
+.top-banner {
+    background-color: #4fb3d4;
+    background-image: url('assets/asset\ 32.png ');
+    background-size: 300px;
+
+}
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* Navbar */
+
+.main-nav {
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* header */
+header {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.header-left {
+    max-width: 40vw;
+}
+
+.header-left h1 {
+    margin-top: 20px;
+}
+
+.get-started-button {
+    margin-top: 20px;
+}
+
+.header-right img {
+    width: 100%;
+}
+
+/* compaines section */
+
+.companies-header {
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 46px;
+}
+
+/* Features section */
+.features-section {
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 41.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-header {
+    text-align: center;
+}
+
+.features-header h2 {
+    margin-bottom: 20px;
+}
+
+.features-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+    background-color: #f2fcff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.features-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.features-logo {
+    height: 50px;
+}
+
+.secondary-button-logo {
+
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 400;
+    color: var(--primary-text-color) !important;
+    padding: 8px 16px;
+    transition: 0.2s ease-out;
+    margin-top: 20px;
+}
+
+.secondary-button-logo:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+
+/* big featueres section */
+
+.big-features-section {
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-container {
+    gap: 30px;
+}
+
+.feature-img img {
+    width: 70%;
+}
+
+.features-desc {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.desc-img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.desc-para {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+/* Examples section */
+.examples-header {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--primary-text-color);
+
+}
+
+.examples-header a {
+    margin-top: 20px;
+}
+
+.examples-cards-section {
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.examples-card {
+    width: 23%;
+    position: relative;
+    height: 300px;
+    border-radius: 6px;
+    background-color: black;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 36.jpeg);
+}
+
+.examples-card:hover {
+    box-shadow: 0 0 10px #888;
+    transition: 0.3s ease-out;
+}
+
+.card-text {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+
+
+/* CTA secction */
+
+.cta-section {
+    background-color: var(--primary-text-color);
+    margin-top: 80px;
+}
+
+.cta-main-section {
+    width: 50%;
+}
+
+.cta-main-section h1 {
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.cta-main-section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-main-section h4 {
+    color: white;
+    font-weight: lighter;
+}
+
+.cta-main-section a {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.cta-image img {
+    width: 100%;
+}
+
+
+/* Footer */
+.sub-footer-container {
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.link-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* sub-footer */
+
+.subfooter {
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+    margin-top: 80px;
+}
+
+.subfooter-container {
+    justify-content: center;
+    gap: 30px;
+}
